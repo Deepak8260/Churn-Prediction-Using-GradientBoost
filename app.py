@@ -13,35 +13,49 @@ def main():
     st.markdown("""
         <style>
             .stApp {
-                background: linear-gradient(135deg, #1E1E2F, #2D3E50);
+                background: linear-gradient(135deg, #0F2027, #203A43, #2C5364);
                 color: white;
             }
             .stButton>button {
-                background-color: #008CBA;
+                background-color: #FF5722;
                 color: white;
-                font-size: 18px;
-                border-radius: 10px;
-                padding: 12px;
+                font-size: 20px;
+                border-radius: 12px;
+                padding: 14px;
                 font-weight: bold;
                 width: 100%;
+                transition: 0.3s;
+            }
+            .stButton>button:hover {
+                background-color: #E64A19;
+                transform: scale(1.05);
+                color: white !important;
             }
             .stNumberInput>div>div>input {
-                background-color: #222;
+                background-color: #333;
                 color: white;
-                border-radius: 5px;
-                border: 1px solid #555;
-                padding: 8px;
+                border-radius: 8px;
+                border: 1px solid #777;
+                padding: 10px;
+                font-size: 16px;
             }
             h1 {
                 text-align: center;
-                color: #4CAF50;
-                font-size: 36px;
+                color: #FFC107;
+                font-size: 40px;
                 font-weight: bold;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
             }
             h3 {
                 text-align: left;
-                color: #DDD;
-                font-size: 24px;
+                color: #FFFFFF;
+                font-size: 26px;
+                font-weight: bold;
+            }
+            .stSuccess, .stError {
+                font-size: 18px;
+                padding: 15px;
+                border-radius: 8px;
             }
         </style>
     """, unsafe_allow_html=True)
